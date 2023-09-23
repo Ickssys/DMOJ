@@ -6,7 +6,7 @@ import java.util.*;
 import java.io.*;
 
 // import java.math.*; // BigInteger
-public class Solution //problem name here
+public class ameriCanadian //problem name here
 {
     // These two classes are rather fast for input and output.
     public static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -19,7 +19,7 @@ public class Solution //problem name here
         
         String input = next();
         while(!input.equals("quit!")){
-            if(input.length() > 4 && input.substring(input.length() - 2).equals("or") && input.indexOf(input.length() - 3) != -1){
+            if(input.length() > 4 && input.substring(input.length() - 2).equals("or") && "aeiouy".indexOf(input.length() - 3) != -1){
                 input = input.substring(0, input.length() - 2) + "our";
             }
             out.println(input);
