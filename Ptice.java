@@ -6,7 +6,7 @@ import java.util.*;
 import java.io.*;
 
 // import java.math.*; // BigInteger
-public class Solution //problem name here
+public class Ptice //problem name here
 {
     // These two classes are rather fast for input and output.
     public static BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
