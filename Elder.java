@@ -17,19 +17,28 @@ public class Elder // always use the problem name here
     public static void main(String[] args) throws IOException {
         PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
         // code here
-        String wizard = next();
-        int N = nextInt(); //battles
-        String obey = wizard;
+        String wand = next();
+        String oldWand = "";
+        int N = nextInt();
+        String l = "";
+        String r = "";
         int count = 1;
-
         for (int i = 0; i < N; i++) {
-            String lWizard = next();
-            String rWizard = next();
-            if (rWizard.equals(obey)) {
-                obey = lWizard;
+            l = next();
+            r = next();
+            if (r.equals(wand)) {
+                wand = l;
+                if(oldWand.equals(wand)){
+                    count--;
+                }
+                count++;
+                oldWand = r;
             }
+            
+
         }
 
+        //partial credit on judge - need to revisit
         //Left code incomplete : have to learn SETS DS
 
 
