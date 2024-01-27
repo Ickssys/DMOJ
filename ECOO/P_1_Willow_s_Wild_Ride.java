@@ -30,10 +30,10 @@ public class P_1_Willow_s_Wild_Ride //problem name here
     static String nextLine() throws IOException {return in.readLine();}
     
     // read Array
-    static String[] readArray(int n) throws IOException {
-        String[] a = new String[n];
+    static int[] readArray(int n) throws IOException {
+        int[] a = new int[n];
         for(int i = 0; i < n; i++){
-            a[i] = next();
+            a[i] = nextInt();
         }
         return a;
     }
