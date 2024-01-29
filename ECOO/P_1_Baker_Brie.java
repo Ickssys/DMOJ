@@ -53,7 +53,7 @@ public class P_1_Baker_Brie //problem name here
         // code here
         int rowSum = 0, colSum = 0;
         for(int t = 0; t < 2; t++){
-            int count = 0, bd = 0;
+            int bd = 0;
             int F = nextInt(), D = nextInt();
             int[][] data = read2DArray(D, F);
             for(int i = 0; i < D; i++){
@@ -76,7 +76,6 @@ public class P_1_Baker_Brie //problem name here
             }
             out.println(bd / 13);
         }
-
         out.close();
         System.exit(0);
     }
