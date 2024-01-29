@@ -52,7 +52,7 @@ public class P_1_Baker_Brie //problem name here
         PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
         // code here
         int rowSum = 0, colSum = 0;
-        for(int t = 0; t < 10; t++){
+        for(int t = 0; t < 2; t++){
             int bd = 0;
             int F = nextInt(), D = nextInt();
             int[][] data = read2DArray(D, F);
@@ -65,9 +65,9 @@ public class P_1_Baker_Brie //problem name here
                     bd += rowSum;
                 }
             }
-            for(int i = 0; i < data[0].length; i++){
+            for(int i = 0; i < F; i++){
                 colSum = 0;
-                for(int j = 0; j < data.length; j++){
+                for(int j = 0; j < D; j++){
                     colSum += data[j][i];
                 }
                 if(colSum % 13 == 0){
