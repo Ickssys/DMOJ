@@ -52,7 +52,7 @@ public class P_1_Baker_Brie //problem name here
         PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
         // code here
         int rowSum = 0, colSum = 0;
-        for(int t = 0; t < 2; t++){
+        for(int t = 0; t < 10; t++){
             int bd = 0;
             int F = nextInt(), D = nextInt();
             int[][] data = read2DArray(D, F);
