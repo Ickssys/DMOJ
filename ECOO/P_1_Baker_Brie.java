@@ -51,8 +51,9 @@ public class P_1_Baker_Brie //problem name here
     public static void main(String[] args) throws IOException {
         PrintWriter out = new PrintWriter(new BufferedOutputStream(System.out));
         // code here
-        int rowSum = 0, colSum = 0, bd = 0;
-        for(int t = 0; t < 10; t++){
+        int rowSum = 0, colSum = 0;
+        for(int t = 0; t < 2; t++){
+            int count = 0, bd = 0;
             int F = nextInt(), D = nextInt();
             int[][] data = read2DArray(D, F);
             for(int i = 0; i < D; i++){
@@ -73,12 +74,7 @@ public class P_1_Baker_Brie //problem name here
                     bd += colSum;
                 }
             }
-            int count = 0;
-            while(bd > 0){
-                bd -= 13;
-                count++;
-            }
-            out.println(count);
+            out.println(bd / 13);
         }
 
         out.close();
