@@ -79,15 +79,10 @@ public class P_1_Free_Shirts //problem name here
             if(N == 0){
                 N = sT;
                 dL++;
-                N--;
             }
-            else if(days[i - 1] > 0) {
-                sT += days[i - 1];
-                N += days[i - 1];
-                N--;
-            }else{
-                N--;
-            }
+            sT += days[i - 1];
+            N += days[i - 1];
+            N--;
         }
         out.println(dL);
     }
